@@ -8,10 +8,12 @@
     <title>Day1 Assignment</title>
     <style>
         .container {
+
             padding: 0 110px;
             position: relative;
-
+            top: -15px;
             font-family: monospace;
+
 
         }
 
@@ -24,8 +26,8 @@
         .alerts {
             padding: 15px;
             background-color: #cce5ff;
-            font-size: 18px;
-            color: #007bff;
+            font-size: 16px;
+            color: #6791d0;
             font-weight: 100;
             border-radius: 4px;
         }
@@ -38,12 +40,14 @@
             color: white;
             font-size: 16px;
             border: none;
+
         }
 
         .blue {
             background-color: #007bff;
-
         }
+
+
 
         .lblack {
             background-color: #6c757d;
@@ -188,7 +192,7 @@
         .block_container {
             padding: 10px;
             background-color: #f7f7f7;
-            border-bottom: 0.5px solid gray;
+            border-bottom: 0.5px solid #e6e6e6;
         }
 
         .block {
@@ -199,7 +203,124 @@
             border-radius: 4px;
             color: white;
             font-size: 18px;
+        }
 
+        /* cards */
+        #h3 {
+            font-size: 20px;
+            font-weight: 600;
+
+        }
+
+        .cards {
+            width: 255px;
+            border: 1px solid #e6e6e6;
+            padding: 15px;
+            margin-top: -10px;
+        }
+
+        .cards_p {
+            font-size: 14px;
+        }
+
+        .Go {
+            font-size: 14px;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        /* featured cards */
+        .feature {
+            width: 100%;
+            font-size: 16px;
+            border: 1px solid #e6e6e6;
+            padding: 15px;
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+            font-weight: 300;
+            background-color: #f7f7f7;
+        }
+
+        .feature_body {
+            width: 100%;
+            border: 1px solid #e6e6e6;
+            padding: 15px;
+            position: relative;
+            top: -1px;
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 4px;
+            font-size: 16px;
+        }
+
+        /* login form */
+        label {
+            font-size: 16px;
+            margin-bottom: 10px;
+            display: inline-block;
+
+        }
+
+        .input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #e6e6e6;
+            border-radius: 4px;
+            outline: none;
+        }
+
+        .formp {
+            margin-bottom: 25px;
+            font-size: 14px;
+            color: #afbbc3;
+
+        }
+
+        .formsub {
+            border: none;
+            font-size: 14px;
+            padding: 15px;
+            color: white;
+            border-radius: 4px;
+        }
+
+
+        /*  */
+        .txt_large {
+            width: 100%;
+            padding: 13px;
+            font-size: 18px;
+            border-radius: 4px;
+            border: 1px solid #e6e6e6;
+            margin-bottom: 15px;
+            outline: none;
+        }
+
+        .txt_normal {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #e6e6e6;
+            margin-bottom: 15px;
+            border-radius: 4px;
+            outline: none;
+        }
+
+
+        .txt_small {
+            width: 100%;
+            padding: 8px;
+            font-size: 14px;
+            border: 1px solid #e6e6e6;
+            margin-bottom: 15px;
+            outline: none;
+            border-radius: 4px;
+        }
+
+        .blueho:focus {
+            box-shadow: 0 0 0 4px #007bff;
+            opacity: .25;
         }
     </style>
 </head>
@@ -253,25 +374,38 @@
         <h2>Cards</h2>
         <img src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22286%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20286%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_17a77d984a3%20text%20%7B%20fill%3A%23999%3Bfont-weight%3Anormal%3Bfont-family%3A-apple-system%2CBlinkMacSystemFont%2C%26quot%3BSegoe%20UI%26quot%3B%2CRoboto%2C%26quot%3BHelvetica%20Neue%26quot%3B%2CArial%2C%26quot%3BNoto%20Sans%26quot%3B%2C%26quot%3BLiberation%20Sans%26quot%3B%2Csans-serif%2C%26quot%3BApple%20Color%20Emoji%26quot%3B%2C%26quot%3BSegoe%20UI%20Emoji%26quot%3B%2C%26quot%3BSegoe%20UI%20Symbol%26quot%3B%2C%26quot%3BNoto%20Color%20Emoji%26quot%3B%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_17a77d984a3%22%3E%3Crect%20width%3D%22286%22%20height%3D%22180%22%20fill%3D%22%23373940%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22107.203125%22%20y%3D%2296.3%22%3E286x180%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
             alt="286*180">
-        <div>Card Title</div>
-        <p>Some quick example text to build on the card title and make up the bulk of the cards content.</p>
-        <button class="blue"> Go Somewhere</button>
+        <div class="cards">
+            <h3 id="h3">Card Title</h3>
+            <p class="cards_p">Some quick example text to build on the card title and make up the bulk of the cards
+                content.
+            </p>
+            <button class="blue Go"> Go Somewhere</button>
+
+        </div>
+
 
         <!--Feature cards-->
         <h2>Feature Cards</h2>
-        <button class="blue"> Go Somewhere</button>
+        <div class="feature">Featured</div>
+        <div class="feature_body">
+            <h3 id="h3">Special title treatment</h3>
+            <p>With supporting text below as a natural lead-in to additional content.</p>
+            <button class="blue Go"> Go Somewhere</button>
+        </div>
+
 
         <!--login-->
         <div>
             <h2>Login Form</h2>
+
             <label> Email address</label><br>
-            <input type="email" placeholder="Enter Email"><br>
-            <p> We will never share your email with anyone.</p>
+            <input class="input blueho" type="email" placeholder="Enter Email"><br>
+            <p class="formp"> We will never share your email with anyone.</p>
             <label>Password</label><br>
-            <input type="Password" placeholder="Password"><br>
+            <input style="margin-bottom: 10px;" class="input blueho" type="Password " placeholder="Password"><br>
             <input type="checkbox">
-            <label>Check me out</label><br>
-            <button class="blue">
+            <label style="margin-bottom: 15px;">Check me out</label><br>
+            <button class="blue formsub">
                 Submit
             </button>
         </div>
@@ -279,9 +413,9 @@
         <!--forms size-->
         <div>
             <h2>Forms size</h2>
-            <input type="text" placeholder="Large text">
-            <input type="text" placeholder="Normal text">
-            <input type="text" placeholder="Small text">
+            <input class="txt_large blueho" type="text" placeholder="Large text">
+            <input class="txt_normal blueho" type="text" placeholder="Normal text">
+            <input class="txt_small blueho" type="text" placeholder="Small text">
         </div>
     </div>
 </body>
