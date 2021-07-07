@@ -10,22 +10,29 @@
         .container {
             padding: 0 110px;
             position: relative;
-            top: -20px;
+
+            font-family: monospace;
 
         }
 
+        h2 {
+            font-size: 24px;
+            font-weight: 500;
+        }
 
+        /* alerts*/
         .alerts {
             padding: 15px;
             background-color: #cce5ff;
             font-size: 18px;
-            color: rgb(92, 92, 245);
+            color: #007bff;
             font-weight: 100;
             border-radius: 4px;
         }
 
+        /* button */
         .button {
-            margin-right: 4px;
+            margin-right: 2px;
             padding: 10px;
             border-radius: 4px;
             color: white;
@@ -67,6 +74,133 @@
         .dblack {
             background-color: #343a40;
         }
+
+        /* button outline */
+        .button_out {
+
+            padding: 10px;
+            border-radius: 4px;
+            background-color: white;
+            font-size: 16px;
+            border: none;
+        }
+
+        .primary {
+            border: 1px solid #007bff;
+            color: #007bff;
+        }
+
+        .primary:hover {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .secondary {
+            border: 1px solid #6c757d;
+            color: #6c757d;
+        }
+
+        .secondary:hover {
+            background-color: #6c757d;
+            color: white;
+        }
+
+        .success {
+            border: 1px solid #28a745;
+            color: #28a745;
+        }
+
+        .success:hover {
+            background-color: #28a745;
+            color: white;
+        }
+
+        .danger {
+            border: 1px solid #dc3545;
+            color: #dc3545;
+
+        }
+
+        .danger:hover {
+            background-color: #dc3545;
+            color: white;
+        }
+
+        .warning {
+            border: 1px solid #ffc107;
+            color: #ffc107;
+        }
+
+        .warning:hover {
+            background-color: #ffc107;
+            color: black;
+        }
+
+        .info {
+            border: 1px solid #17a2b8;
+            color: #17a2b8;
+        }
+
+        .info:hover {
+            background-color: #17a2b8;
+            color: white;
+        }
+
+        .light {
+            border: 1px solid #f8f9fa;
+            color: #f8f9fa;
+        }
+
+        .light:hover {
+            background-color: #f8f9fa;
+            color: black;
+        }
+
+        .dark {
+            border: 1px solid #343a40;
+            color: #343a40;
+        }
+
+        .dark:hover {
+            background-color: #343a40;
+            color: white;
+        }
+
+        /* buttons size */
+        .large {
+            border: none;
+            margin-bottom: 6px;
+            padding: 15px 25px 10px 25px;
+            color: white;
+            font-size: 18px;
+            border-radius: 4px;
+        }
+
+        .small {
+            border: none;
+            padding: 10px 10px 10px 5px;
+            color: white;
+            font-size: 14px;
+            border-radius: 4px;
+        }
+
+        /* buttons block*/
+        .block_container {
+            padding: 10px;
+            background-color: #f7f7f7;
+            border-bottom: 0.5px solid gray;
+        }
+
+        .block {
+            margin-bottom: 4px;
+            padding: 15px;
+            width: 100%;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            font-size: 18px;
+
+        }
     </style>
 </head>
 
@@ -92,36 +226,40 @@
 
         <!--buttons outline-->
         <h2>Buttons Outline</h2>
-        <button>Button primary</button>
-        <button>Button secondary</button>
-        <button>Button success</button>
-        <button>Button danger</button>
-        <button>Button warning</button>
-        <button>Button info</button>
-        <button>Button light</button>
-        <button>Button dark</button>
+        <button class="primary button_out">Button primary</button>
+        <button class="secondary button_out">Button secondary</button>
+        <button class="success button_out">Button success</button>
+        <button class="danger button_out">Button danger</button>
+        <button class="warning button_out">Button warning</button>
+        <button class="info button_out">Button info</button>
+        <button class="light button_out">Button light</button>
+        <button class="dark button_out">Button dark</button>
 
         <!--buttons size-->
         <h2>Buttons Size</h2>
-        <button>Large button</button>
-        <button>Large button</button><br>
-        <button>Small button</button>
-        <button>Small button</button>
+        <button class="large blue">Large button</button>
+        <button class="large lblack">Large button</button><br>
+        <button class="small blue">Small button</button>
+        <button class="small lblack">Small button</button>
 
         <!--buttons block-->
         <h2>Buttons Block</h2>
-        <button>Block level button</button>
-        <button>Block level button</button>
+        <div class="block_container">
+            <button class="block blue">Block level button</button>
+            <button class="block lblack">Block level button</button>
+        </div>
 
         <!--cards-->
         <h2>Cards</h2>
+        <img src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22286%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20286%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_17a77d984a3%20text%20%7B%20fill%3A%23999%3Bfont-weight%3Anormal%3Bfont-family%3A-apple-system%2CBlinkMacSystemFont%2C%26quot%3BSegoe%20UI%26quot%3B%2CRoboto%2C%26quot%3BHelvetica%20Neue%26quot%3B%2CArial%2C%26quot%3BNoto%20Sans%26quot%3B%2C%26quot%3BLiberation%20Sans%26quot%3B%2Csans-serif%2C%26quot%3BApple%20Color%20Emoji%26quot%3B%2C%26quot%3BSegoe%20UI%20Emoji%26quot%3B%2C%26quot%3BSegoe%20UI%20Symbol%26quot%3B%2C%26quot%3BNoto%20Color%20Emoji%26quot%3B%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_17a77d984a3%22%3E%3Crect%20width%3D%22286%22%20height%3D%22180%22%20fill%3D%22%23373940%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22107.203125%22%20y%3D%2296.3%22%3E286x180%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+            alt="286*180">
         <div>Card Title</div>
         <p>Some quick example text to build on the card title and make up the bulk of the cards content.</p>
-        <button> Go Somewhere</button>
+        <button class="blue"> Go Somewhere</button>
 
         <!--Feature cards-->
         <h2>Feature Cards</h2>
-        <button> Go Somewhere</button>
+        <button class="blue"> Go Somewhere</button>
 
         <!--login-->
         <div>
@@ -133,7 +271,7 @@
             <input type="Password" placeholder="Password"><br>
             <input type="checkbox">
             <label>Check me out</label><br>
-            <button>
+            <button class="blue">
                 Submit
             </button>
         </div>
